@@ -1,0 +1,39 @@
+# conda env update --name base --file environment.yaml
+
+name: NewBul
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - cudatoolkit
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pip
+  - ipywidgets
+  - opencv=3.4.*
+  - xlrd
+  - scikit-learn
+  - line_profiler
+  - pylint
+  - seaborn
+  - scikit-image
+  - aiofiles
+  - tqdm
+  - requests
+  - jupyter_contrib_nbextensions
+  - pip:
+      - bokeh
+      - nvidia-ml-py3
+      - dataclasses
+      - git+https://github.com/conery/nbscan.git
+      - jupyterthemes
+      - pydicom
+      - fire
+      - ffmpy
+      - ptvsd
+      - modin 
+      - starlette
+      - uvicorn
+      - python-multipart
+      
+      
